@@ -23,7 +23,6 @@ class LinkedList(object):
             current_node = current_node.next_node
             if current_node.data == data:
                 last_node.next_node = current_node.next_node
-                return
 
     def display_node_data(self):
         items = []
@@ -41,6 +40,9 @@ if __name__ == '__main__':
     x.add_node(13)
     x.add_node(14)
     x.add_node(15)
+    x.add_node(10)
+    x.add_node(13)
     x.display_node_data()
     x.remove_node(13)
+    x.remove_node(10)
     x.display_node_data()
