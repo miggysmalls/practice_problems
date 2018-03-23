@@ -8,6 +8,7 @@ def no_dubs(x):
     [no_dubs_string.append(i) for i in x if i not in no_dubs_string]
     return no_dubs_string
 
+
 if __name__ == '__main__':
     a = no_dubs(STRING)
     print(''.join(a))
